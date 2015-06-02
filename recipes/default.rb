@@ -39,13 +39,6 @@ file "/home/joshua/.forward" do
   mode 0600
 end
 
-file "/root/.forward" do
-  content 'josh@sanchia.com.au'
-  owner 'root'
-  group 'root'
-  mode 0600
-end
-
 sudo 'wheel' do
   user      "%wheel"
   nopasswd  true
